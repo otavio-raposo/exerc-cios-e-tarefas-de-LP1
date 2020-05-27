@@ -6,16 +6,23 @@ public class AlunoFatec {
 	private int ra;
 	private String email;
 	
+
+	public AlunoFatec(String nome, String email, int ra) {
+		this.nome=nome;
+		this.email=email;
+		this.ra=ra;
+	}
+	
 	public void faltas() {
-		System.out.println("O Aluno consultou quantas faltas possui");
+		System.out.println("O Aluno "+this.nome+" de RA nº "+this.ra+" consultou quantas faltas possui");
 	}
 	
 	public void emprestimo() {
-		System.out.println("O Aluno emprestou um livro");
+		System.out.println("O Aluno "+this.nome+" de RA nº "+this.ra+" emprestou um livro");
 	}
 	
 	public void notas() {
-		System.out.println("O Aluno consultou sua nota");
+		System.out.println("O Aluno "+this.nome+" de RA nº "+this.ra+" consultou sua nota");
 	}
 
 	public String getNome() {
